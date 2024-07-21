@@ -5,13 +5,12 @@ pkgrel=1
 pkgdesc="A bitmap font for Linux console that combines other fonts' best features."
 arch=("any")
 url="https://github.com/bynux-gh/bynfont"
-license=('GPL')
+license=('MIT')
 depends=()
 makedepends=()
 optdepends=()
 source=("git+${url}.git#tag=${_tag}?signed")
 md5sums=("SKIP")
-validpgpkeys=(BE6845F602EA82F24A81EAE66D56E565881BDA42)
 
 _sourceName="bynfont"
 pkgver() {
@@ -21,6 +20,7 @@ pkgver() {
 
 package() {
   cd "${_sourceName}"
+  mkdir "${pkgdir}"/usr/share/licenses/"${pkgname}"
   install -Dm 644 LICENSE -t "${pkgdir}"/usr/share/licenses/"${pkgname}"/
-  install -Dm 644 bynfont.psfu.gz -t "${pkgdir}"/usr/share/kbd/consolefonts/"${pkgname}"/
+  install -Dm 644 bynfont.psfu.gz -t "${pkgdir}"/usr/share/kbd/consolefonts/
 }
