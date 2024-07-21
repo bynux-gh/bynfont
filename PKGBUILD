@@ -9,18 +9,12 @@ license=('MIT')
 depends=()
 makedepends=()
 optdepends=()
-source=("git+${url}.git#tag=${_tag}?signed")
+source=("git+${url}.git")
 md5sums=("SKIP")
 
-_sourceName="bynfont"
-pkgver() {
-  cd "${_sourceName}"
-  git describe --tags | sed 's/^v//'
-}
-
 package() {
-  cd "${_sourceName}"
-  mkdir "${pkgdir}"/usr/share/licenses/"${pkgname}"
+  cd "${pkgname}"
+  mkdir -p "${pkgdir}"/usr/share/licenses/"${pkgname}"
   install -Dm 644 LICENSE -t "${pkgdir}"/usr/share/licenses/"${pkgname}"/
   install -Dm 644 bynfont.psfu.gz -t "${pkgdir}"/usr/share/kbd/consolefonts/
 }
