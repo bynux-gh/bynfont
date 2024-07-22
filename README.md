@@ -7,7 +7,7 @@ A modern bitmap font for Linux terminal that combines the best features of other
 
 The font uses [Tamzen For Powerline 8x16]([https://kbd-project.org/](https://github.com/sunaku/tamzen-font) as a base (with a few minor design tweaks), but takes the box-drawing characters from [Terminus](https://terminus-font.sourceforge.net/).
 
-![](./assets/bynfont.png)
+![](./assets/screenshot.png)
 
 ## Installation
 
