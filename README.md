@@ -9,7 +9,7 @@ The font uses [Tamzen For Powerline 8x16](https://github.com/sunaku/tamzen-font)
 
 Some symbols have been swapped around and replaced for use in emoticons; others have more sensible and commonly-used characters in place of them.
 
-![](./assets/font.png)
+![](./assets/font-2-1.png)
 
 ## Installation
 
