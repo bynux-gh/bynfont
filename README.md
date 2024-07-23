@@ -5,9 +5,9 @@ A modern bitmap font for Linux terminal that combines the best features of other
 
 `bynfont` is a well-balanced mix of modern-looking glyphs, differentiable characters (0/O, l/1), rudimentary Powerline support, and a sleek style more similar to modern programming fonts.
 
-The font uses [Tamzen For Powerline 8x16](https://github.com/sunaku/tamzen-font) as a base (with a few minor design tweaks), but takes the box-drawing characters from [Terminus](https://terminus-font.sourceforge.net/).
+The font uses [Tamzen For Powerline 8x16](https://github.com/sunaku/tamzen-font) as a base and overhauls it, taking the box-drawing characters from [Terminus](https://terminus-font.sourceforge.net/).
 
-In addition, some symbols have been swapped around and replaced for use in emoticons
+Some symbols have been swapped around and replaced for use in emoticons; others have more sensible and commonly-used characters in place of them.
 
 ![](./assets/font.png)
 
